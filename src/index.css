@@ -4,6 +4,9 @@
   border: 0;
   box-shadow: border-box;
   font-family: "Roboto", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  outline-style: none;
 }
 html,
 body,
