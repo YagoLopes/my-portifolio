@@ -20,13 +20,7 @@ function App() {
           </li>
           <li>
             <a href="##">GitHub</a>
-          </li>
-          <li>
-            {" "}
             <a href="##">Docs</a>
-          </li>
-          <li>
-            {" "}
             <a href="##">Pricing</a>
           </li>
         </ul>
@@ -41,6 +35,7 @@ function App() {
         <img src={intro} alt="img1"></img>
       </section>
       <section id="code">
+        <span>How it Works</span>
         <ul>
           <li>
             <img src={img1} alt="img1"></img>
@@ -62,7 +57,7 @@ function App() {
           </li>
         </ul>
       </section>
-      <section>
+      <section id="tech">
         <header>Yep, it works for any site</header>
         <p>
           Integration is as easy as any other headless CMS, and saves you from
