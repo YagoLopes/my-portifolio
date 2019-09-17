@@ -108,7 +108,7 @@ function App() {
                 </a>
             </section>
             <footer>
-                <div>
+                <section id="avatar">
                     <header>Dont take our word for it</header>
                     <img src={avatar} alt="avatar"></img>
                     <p>
@@ -117,15 +117,15 @@ function App() {
                         problems and has an immediate turnaround time.”
                     </p>
                     <span>John Necef, Founder and CEO @ The New Paper</span>
-                </div>
-                <div>
+                </section>
+                <section id="azul">
                     <header>
                         Did we mention this page was made with Builder?
                     </header>
                     <span>What will you create?</span>
                     <a href="##">START NOW</a>
-                </div>
-                <div>
+                </section>
+                <section id="links">
                     <div>
                         <span>Docs</span>
                         <span>Github</span>
@@ -139,7 +139,7 @@ function App() {
                         <span>Privacy</span>
                         <span>Terms</span>
                     </div>
-                </div>
+                </section>
             </footer>
         </div>
     );
