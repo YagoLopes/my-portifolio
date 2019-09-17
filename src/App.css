@@ -21,7 +21,7 @@ div#container nav ul :first-child a {
     margin-right: 10%;
     margin-left: 10%;
     font-size: 30px;
-    color: #515151;
+    color: #681457;
 }
 
 div#container nav ul :last-child a {
@@ -242,7 +242,7 @@ div#container footer {
 }
 div#container footer section#avatar header {
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-size: 29px;
     text-align: center;
     color: #37383c;
@@ -254,7 +254,10 @@ div#container footer section#avatar span {
 }
 
 div#container footer section#avatar img {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
 div#container footer section#azul {

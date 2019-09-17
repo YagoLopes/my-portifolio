@@ -7,7 +7,6 @@ import img3 from "./assets/img/img3.png";
 import intro from "./assets/img/intro.png";
 import code from "./assets/img/code.png";
 import sandbox from "./assets/img/sandbox.png";
-import avatar from "./assets/img/avatar.png";
 
 function App() {
     return (
@@ -16,7 +15,7 @@ function App() {
                 <ul>
                     <li>
                         {" "}
-                        <a href="##"> BUILDER </a>
+                        <a href="##"> Landing </a>
                     </li>
                     <li>
                         <a href="##">GitHub</a>
@@ -109,8 +108,11 @@ function App() {
             </section>
             <footer>
                 <section id="avatar">
-                    <header>Dont take our word for it</header>
-                    <img src={avatar} alt="avatar"></img>
+                    <header>Developer by</header>
+                    <img
+                        src="https://avatars2.githubusercontent.com/u/42846057?v=4"
+                        alt="avatar"
+                    ></img>
                     <p>
                         “We offloaded 100% of menial engineering tasks to
                         Builder. It allows our developers to focus on bigger
