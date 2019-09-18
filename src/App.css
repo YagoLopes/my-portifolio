@@ -17,16 +17,24 @@ div#container ul {
     height: 100%;
     justify-content: space-between;
 }
+div#container ul li {
+    width: 100%;
+}
 div#container nav ul :first-child a {
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-left: 10px;
     font-size: 30px;
     color: #681457;
+}
+div#container nav ul :first-child {
+    min-width: 40%;
+}
+
+div#container nav ul :last-child {
+    text-align: right;
 }
 
 div#container nav ul :last-child a {
     margin-right: 20px;
-    text-align: center;
     font-size: 17px;
     color: #5d5d5d;
 }

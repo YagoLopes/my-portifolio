@@ -1,37 +1,56 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { FaVuejs, FaReact, FaNodeJs, FaHtml5, FaCss3 } from "react-icons/fa";
 import img1 from "./assets/img/img1.png";
 import img2 from "./assets/img/img2.png";
 import img3 from "./assets/img/img3.png";
-import intro from "./assets/img/intro.png";
+import css from "./assets/img/code-css.png";
 import code from "./assets/img/code.png";
 import sandbox from "./assets/img/sandbox.png";
-
+import axios from "axios";
 function App() {
+    const [payload, setPayload] = useState({});
+    useEffect(() => {
+        _push();
+    }, []);
+
+    async function _push() {
+        const response = await axios.get(
+            "https://api.github.com/users/YagoLopes"
+        );
+        setPayload(response.data);
+    }
+
     return (
         <div id="container">
+            {console.log(payload)}
             <nav>
                 <ul>
                     <li>
                         {" "}
-                        <a href="##"> Landing </a>
+                        <a href="##">Yago Lopes</a>
                     </li>
                     <li>
-                        <a href="##">GitHub</a>
-                        <a href="##">Docs</a>
-                        <a href="##">Pricing</a>
+                        <a href={payload.html_url}>GitHub</a>
+
+                        <a href="https://www.linkedin.com/in/yago-lopes-lázaro-917536140">
+                            Linkedin
+                        </a>
+                        <a href={`http://${payload.blog}`}>Startup</a>
                     </li>
                 </ul>
             </nav>
             <section id="intro">
-                <h1>Drag and drop page building for any site</h1>
+                <h1>
+                    O que é front-end: Qual é a diferença entre
+                    front-end/back-end, o que faz um full stack developer e
+                    quais são as principais skills que esse Dev precisa ter
+                </h1>
                 <span>
-                    One simple API integration turns everyone on your team into
-                    a web developer
+                    Conheça mais sobre o meu trabalho ao longo dessa pagina
                 </span>
-                <a href="##">TRY IT FREE</a>
-                <img src={intro} alt="img1"></img>
+                <a href="##">let's go</a>
+                <img src={css} alt="img1"></img>
             </section>
             <section id="code">
                 <span>How it Works</span>
