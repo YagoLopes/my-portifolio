@@ -80,6 +80,12 @@ div#container section#intro a {
     letter-spacing: 1px;
     color: #ffffff;
 }
+
+div#container section#intro img {
+    display: flex;
+    max-height: 500px;
+    width: 100%;
+}
 div#container section#code {
     width: 100%;
     display: flex;
