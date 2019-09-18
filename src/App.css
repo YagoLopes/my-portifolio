@@ -22,7 +22,7 @@ div#container ul li {
 }
 div#container nav ul :first-child a {
     margin-left: 10px;
-    font-size: 30px;
+    font-size: 23px;
     color: #681457;
 }
 div#container nav ul :first-child {
