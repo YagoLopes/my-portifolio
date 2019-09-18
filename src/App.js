@@ -23,7 +23,6 @@ function App() {
 
     return (
         <div id="container">
-            {console.log(payload)}
             <nav>
                 <ul>
                     <li>
@@ -53,25 +52,35 @@ function App() {
                 <img src={css} alt="img1"></img>
             </section>
             <section id="code">
-                <span>How it Works</span>
+                <span>Como funciona</span>
                 <ul>
                     <li>
                         <img src={img1} alt="img1"></img>
-                        <span>1. Connect to your site</span>
+                        <span>Prototipagem</span>
                         <p>
-                            Integrating Builder onto your existing site is as
-                            easy as hooking up one API or SDK.
+                            A prototipagem é o momento de validar, testar e
+                            conferir se o que foi pensado tem condições de virar
+                            produto.
                         </p>
                     </li>
                     <li>
                         <img src={img2} alt="img2"></img>
-                        <span>2. Create new pages</span>
-                        <p>Create new pages visually with</p>
+                        <span>Desenvolvimento</span>
+                        <p>
+                            O desenvolvimento é o processo de fabricação do
+                            software, com o prototipo em mãos esse processo tem
+                            como objetivo criar e executar todas as ações
+                            definidas no prototipo
+                        </p>
                     </li>
                     <li>
                         <img src={img3} alt="img3"></img>
-                        <span>3. Publish</span>
-                        <p>And your new page is live, instantly!</p>
+                        <span>Testes</span>
+                        <p>
+                            Os teste são efetuados em todos os processos da
+                            criação de uma aplicação, é a atravez deles que as
+                            falhas são descobertas
+                        </p>
                     </li>
                 </ul>
             </section>

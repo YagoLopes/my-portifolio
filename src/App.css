@@ -83,7 +83,7 @@ div#container section#intro a {
 
 div#container section#intro img {
     display: flex;
-    max-height: 500px;
+    max-height: 700px;
     width: 100%;
 }
 div#container section#code {
