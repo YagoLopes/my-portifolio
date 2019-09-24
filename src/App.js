@@ -1,178 +1,44 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
-import { FaVuejs, FaReact, FaNodeJs, FaHtml5, FaCss3 } from "react-icons/fa";
-import img1 from "./assets/img/img1.png";
-import img2 from "./assets/img/img2.png";
-import img3 from "./assets/img/img3.png";
-import css from "./assets/img/code-css.png";
-import code from "./assets/img/code.png";
-import sandbox from "./assets/img/sandbox.png";
-import axios from "axios";
-function App() {
-    const [payload, setPayload] = useState({});
-    useEffect(() => {
-        _push();
-    }, []);
+import logo from "./assets/img/logo.jpeg";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
-    async function _push() {
-        const response = await axios.get(
-            "https://api.github.com/users/YagoLopes"
-        );
-        setPayload(response.data);
-    }
-
+export default function App() {
     return (
         <div id="container">
-            <nav>
-                <ul>
-                    <li>
-                        {" "}
-                        <a href="##">Yago Lopes</a>
-                    </li>
-                    <li>
-                        <a href={payload.html_url}>GitHub</a>
-
-                        <a href="https://www.linkedin.com/in/yago-lopes-lázaro-917536140">
-                            Linkedin
-                        </a>
-                        <a href={`http://${payload.blog}`}>Startup</a>
-                    </li>
-                </ul>
-            </nav>
-            <section id="intro">
-                <h1>
-                    O que é front-end: Qual é a diferença entre
-                    front-end/back-end, o que faz um full stack developer e
-                    quais são as principais skills que esse Dev precisa ter
-                </h1>
-                <span>
-                    Conheça mais sobre o meu trabalho ao longo dessa pagina
-                </span>
-                <a href="##">let's go</a>
-                <img src={css} alt="img1"></img>
-            </section>
-            <section id="code">
-                <span>Como funciona</span>
-                <ul>
-                    <li>
-                        <img src={img1} alt="img1"></img>
-                        <span>Prototipagem</span>
-                        <p>
-                            A prototipagem é o momento de validar, testar e
-                            conferir se o que foi pensado tem condições de virar
-                            produto.
-                        </p>
-                    </li>
-                    <li>
-                        <img src={img2} alt="img2"></img>
-                        <span>Desenvolvimento</span>
-                        <p>
-                            O desenvolvimento é o processo de fabricação do
-                            software, com o prototipo em mãos esse processo tem
-                            como objetivo criar e executar todas as ações
-                            definidas no prototipo
-                        </p>
-                    </li>
-                    <li>
-                        <img src={img3} alt="img3"></img>
-                        <span>Testes</span>
-                        <p>
-                            Os teste são efetuados em todos os processos da
-                            criação de uma aplicação, é a atravez deles que as
-                            falhas são descobertas
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section id="tech">
-                <header>Yep, it works for any site</header>
+            <main>
+                <img src={logo} alt="Yago Lopes"></img>
+                <header>Yago Lopes</header>
                 <p>
-                    Integration is as easy as any other headless CMS, and saves
-                    you from endless static coding request
+                    I was gonna take the time to sit down and write you a little
+                    letter. But I thought a song would probably be a little
+                    better. Instead of a ,letter. That you'd probably just shred
+                    up--yeah. I stumbled on your picture yesterday and it made
+                    me stop and think of. How much of a waste it'd ,be for me to
+                    put some ink to, a stupid piece a. Paper, I'd rather let you
+                    see how. Much I fucking hate you in a freestyle.
                 </p>
-                <ul id="items">
-                    <li>
-                        <a href="##"> REST API Example</a>
-                    </li>
-                    <li>
-                        <a href="##"> React Example</a>
-                    </li>
-                    <li>
-                        <a href="##">Vanilia JS Example</a>
-                    </li>
-                </ul>
-                <img src={code} alt="code" id="code" />
-                <a href="##" id="sandbox">
-                    <img src={sandbox} alt="sandbox"></img>{" "}
-                    <span>Try it in CodeSandbox</span>
-                </a>
-                <ul id="icons">
-                    <li>
-                        <FaCss3 />
-                        <span>CSS3</span>
-                    </li>
-                    <li>
-                        <FaHtml5 />
-                        <span>HTML5</span>
-                    </li>
-                    <li>
-                        <FaReact />
-                        <span>React.js</span>
-                    </li>
-                    <li>
-                        <FaNodeJs />
-                        <span>Node.js</span>
-                    </li>
-                    <li>
-                        <FaVuejs />
-                        <span>Vue.js</span>
-                    </li>
-                </ul>
+            </main>
 
-                <a href="##" id="view">
-                    {" "}
-                    View The Quick Start Guide{" "}
-                </a>
-            </section>
+            <div id="corusel">
+                <aside>your content</aside>
+                <aside>your content</aside>
+                <aside>your content</aside>
+            </div>
+
             <footer>
-                <section id="avatar">
-                    <header>Developer by</header>
-                    <img
-                        src="https://avatars2.githubusercontent.com/u/42846057?v=4"
-                        alt="avatar"
-                    ></img>
-                    <p>
-                        “We offloaded 100% of menial engineering tasks to
-                        Builder. It allows our developers to focus on bigger
-                        problems and has an immediate turnaround time.”
-                    </p>
-                    <span>John Necef, Founder and CEO @ The New Paper</span>
-                </section>
-                <section id="azul">
-                    <header>
-                        Did we mention this page was made with Builder?
-                    </header>
-                    <span>What will you create?</span>
-                    <a href="##">START NOW</a>
-                </section>
-                <section id="links">
-                    <div>
-                        <span>Docs</span>
-                        <span>Github</span>
-                    </div>
-                    <div>
-                        <span>Pricing</span>
-                        <span>Login</span>
-                        <span>Signup</span>
-                    </div>
-                    <div>
-                        <span>Privacy</span>
-                        <span>Terms</span>
-                    </div>
-                </section>
+                <a href="##">
+                    <FaInstagram />
+                </a>
+
+                <a href="##">
+                    <FaGithub />
+                </a>
+
+                <a href="##">
+                    <FaLinkedin />
+                </a>
             </footer>
         </div>
     );
 }
-
-export default App;

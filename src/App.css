@@ -1,338 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Rochester&display=swap");
+
 div#container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-div#container nav {
-    display: flex;
-    width: 100%;
-    height: 50px;
+    height: 100%;
+    display: grid;
+    background: #932e70;
+    grid-template-rows: 60% 30% 10%;
+    grid-template-areas:
+        "main"
+        "corusel"
+        "footer";
 }
 
-div#container ul {
-    padding: 0;
-    display: flex;
-    align-items: center;
+div#container main {
     width: 100%;
     height: 100%;
-    justify-content: space-between;
-}
-div#container ul li {
-    width: 100%;
-}
-div#container nav ul :first-child a {
-    margin-left: 10px;
-    font-size: 23px;
-    color: #681457;
-}
-div#container nav ul :first-child {
-    min-width: 40%;
-}
-
-div#container nav ul :last-child {
-    text-align: right;
-}
-
-div#container nav ul :last-child a {
-    margin-right: 20px;
-    font-size: 17px;
-    color: #5d5d5d;
-}
-
-div#container section#intro {
-    margin-top: 30px;
-    width: 100%;
+    grid-area: main;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-div#container section#intro h1 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 34px;
-    line-height: 40px;
-    text-align: center;
-    color: #37383c;
+
+div#container img {
+    margin-top: 30px;
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 50%;
 }
-div#container section#intro span {
-    margin-top: 10px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
-    line-height: 27px;
-    text-align: center;
-    color: #6b7c93;
+div#container header {
+    margin-top: 5px;
+    max-height: 15;
+    color: #fff;
+    font-family: "Rochester", cursive;
+    font-size: 2em;
 }
-div#container section#intro a {
+div#container p {
     margin-top: 15px;
-    margin-bottom: 15px;
-    align-self: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    background: #932e70;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 26.5px;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 22px;
-    letter-spacing: 1px;
-    color: #ffffff;
+    color: #fff;
+    max-width: 70%;
+    max-height: 70%;
 }
 
-div#container section#intro img {
-    display: flex;
-    max-height: 700px;
-    width: 100%;
-}
-div#container section#code {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+@media only screen and (min-width: 600px) {
+    div#container p {
+        max-width: 50%;
+    }
 }
 
-div#container section#code span {
-    margin-top: 50px;
-    text-align: center;
-    font-size: 29px;
-    line-height: 34px;
-    text-align: center;
-    color: #37383c;
-}
-div#container section#code ul {
-    flex-wrap: wrap;
+div#container div#corusel {
     display: flex;
-    justify-content: space-around;
-}
-div#container section#code ul li {
-    max-width: 300px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    align-self: stretch;
-    margin-bottom: 50px;
-}
-
-div#container section#code ul span {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 25px;
-    text-align: center;
-    color: #000000;
-}
-div#container section#code ul p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.52);
-}
-
-div#container section#code ul li img {
-    width: 100%;
-    border: solid 1px #cccccc;
-}
-div#container section#tech {
-    background: #f8f9fc;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-div#container section#tech header {
-    margin-top: 30px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
-    text-align: center;
-
-    color: #37383c;
-}
-div#container section#tech p {
-    margin-top: 10px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 22px;
-    text-align: center;
-    color: #6b7c93;
-}
-div#container section#tech ul#items {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-}
-div#container section#tech ul#items li {
-    display: flex;
+    width: 50%;
+    height: 100%;
+    grid-area: corusel;
     justify-content: center;
     align-items: center;
+    justify-self: center;
+    border-bottom: #fff 2px solid;
+}
+
+div#container div#corusel aside {
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
     margin: 10px;
-    width: 192px;
-    height: 39px;
-    background: #ffffff;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.11);
-    border-radius: 40px;
 }
-
-div#container section#tech ul#items li a {
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.66);
-}
-div#container section#tech img#code {
-    margin-left: auto;
-    margin-right: auto;
-    width: 55%;
-}
-div#container section#tech a#sandbox {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-self: center;
-    background: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 26.5px;
-    width: 251px;
-    height: 45px;
-    font-size: 16px;
-    line-height: 19px;
-    color: #393939;
-}
-
-div#container section#tech ul#icons {
-    background: #ffffff;
-    width: 90%;
-    height: 133px;
-    margin: 30px auto 30px auto;
-}
-
-div#container section#tech ul#icons li {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-div#container section#tech ul#icons li :first-child {
-    background-color: #932e70;
-    color: #ffffff;
-    width: 35px;
-    height: 35px;
-    padding: 3%;
-    border-radius: 50%;
-}
-div#container section#tech a#view {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    width: 287px;
-    height: 46px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #932e70;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 26.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
-
 div#container footer {
-    text-align: center;
-}
-div#container footer section#avatar header {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 29px;
-    text-align: center;
-    color: #37383c;
-}
-
-div#container footer section#avatar span {
-    font-size: 15px;
-    line-height: 18px;
-}
-
-div#container footer section#avatar img {
-    margin-bottom: 20px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-div#container footer section#azul {
-    margin-top: 50px;
-    background-color: #932e70;
+    display: flex;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-div#container footer section#azul header {
-    margin-top: 50px;
-    font-size: 29px;
-    line-height: 34px;
-    /* identical to box height */
-
-    text-align: center;
-
-    color: #ffffff;
-}
-
-div#container footer section#azul span {
-    margin-top: 20px;
-    font-size: 23px;
-    line-height: 27px;
-    text-align: center;
-    color: #ffffff;
-}
-
-div#container footer section#azul a {
-    display: flex;
-    align-items: center;
+    height: 100%;
     justify-content: center;
-    align-self: center;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    width: 187px;
-    height: 50px;
-    background: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 26.5px;
-    font-size: 19px;
-    line-height: 22px;
-    letter-spacing: 1px;
-
-    color: #681457;
-}
-
-div#container footer section#links {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+    grid-area: footer;
+    text-align: center;
 }
-div#container footer section#links div {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    align-items: center;
-    align-self: stretch;
-    margin-bottom: 50px;
-}
-div#container footer section#links div span {
-    margin-top: 20px;
+div#container footer a {
+    color: #fff;
 }
