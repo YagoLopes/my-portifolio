@@ -5,22 +5,31 @@ export const card = {
     borderRadius: 10,
     background: "#fff",
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
+    maxWidth: 170,
+    maxHeight: 200
 };
 
 export const header = {
-    padding: 30,
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
+    width: "100%",
+    height: "100%"
 };
 export const img = {
-    width: 64
+    margin: 0,
+    padding: 0,
+    borderRadius: 0,
+    display: "flex",
+    maxWidth: 64,
+    maxHeight: 64
 };
 
 export const strong = {
-    fontSize: 24,
-    marginTop: 10
+    fontSize: 1,
+    margin: 0,
+    padding: 0
 };
 
 export const small = {
@@ -41,6 +50,7 @@ export const tsmall = {
     fontStyle: "italic"
 };
 export const btn = {
-    background: "#fff",
-    color: "none"
+    fontSize: 25,
+    color: "#fff",
+    background: "none"
 };

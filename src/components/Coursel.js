@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 import ItemsCarousel from "react-items-carousel";
 import {
     card,
@@ -29,15 +30,23 @@ export default () => {
     const [activeItemIndex, setActiveItemIndex] = useState(0);
     const [repositories, setRepositories] = useState([]);
 
-    const chevronWidth = 40;
+    const chevronWidth = 10;
     return (
         <ItemsCarousel
             requestToChangeActive={setActiveItemIndex}
             activeItemIndex={activeItemIndex}
             numberOfCards={3}
             gutter={20}
-            leftChevron={<button style={btn}>{"<"}</button>}
-            rightChevron={<button style={btn}>{">"}</button>}
+            leftChevron={
+                <button style={btn}>
+                    <FaArrowAltCircleLeft />
+                </button>
+            }
+            rightChevron={
+                <button style={btn}>
+                    <FaArrowAltCircleRight />
+                </button>
+            }
             outsideChevron
             chevronWidth={chevronWidth}
         >
