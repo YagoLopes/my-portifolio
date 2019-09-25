@@ -32,9 +32,14 @@ div#container p {
 div#container footer {
     margin-top: 5%;
     border-top: #fff 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 div#container footer a {
-    margin-top: 10px;
+    font-size: 30px;
+    padding-top: 1%;
+    padding-left: 3%;
     color: #fff;
 }

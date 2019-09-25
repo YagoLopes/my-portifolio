@@ -23,15 +23,15 @@ export default function App() {
 
             <Corusel />
             <footer>
-                <a href="##">
+                <a href="https://www.instagram.com/yagolopeslazaro/">
                     <FaInstagram />
                 </a>
 
-                <a href="##">
+                <a href="https://github.com/YagoLopes">
                     <FaGithub />
                 </a>
 
-                <a href="##">
+                <a href="https://www.linkedin.com/in/yago-lopes-l%C3%A1zaro-917536140/">
                     <FaLinkedin />
                 </a>
             </footer>

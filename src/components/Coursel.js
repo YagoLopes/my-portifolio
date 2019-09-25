@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
-import ItemsCarousel from "react-items-carousel";
 import {
-    card,
-    btn,
-    header,
-    img,
-    strong,
-    small,
-    ul,
-    li,
-    tsmall
-} from "./Styles";
+    FaArrowAltCircleLeft,
+    FaArrowAltCircleRight,
+    FaGithubAlt
+} from "react-icons/fa";
+import ItemsCarousel from "react-items-carousel";
+import { card, btn, header, icon, small, ul, li, tsmall } from "./Styles";
 import api from "../service/api";
 export default () => {
     useEffect(() => {
@@ -35,7 +29,7 @@ export default () => {
         <ItemsCarousel
             requestToChangeActive={setActiveItemIndex}
             activeItemIndex={activeItemIndex}
-            numberOfCards={3}
+            numberOfCards={2}
             gutter={20}
             leftChevron={
                 <button style={btn}>
@@ -52,15 +46,9 @@ export default () => {
         >
             {repositories.map(repository => (
                 <div style={card} key={repository.id}>
-                    {console.log(repository.languages_url)}
                     <header style={header}>
-                        <img
-                            style={img}
-                            src={repository.owner.avatar_url}
-                            alt={repository.owner.login}
-                        />
-                        <strong style={strong}>{repository.name}</strong>
-                        <small style={small}>{repository.owner.login}</small>
+                        <FaGithubAlt style={icon} />
+                        <small style={small}>{repository.name}</small>
                     </header>
 
                     <ul style={ul}>
@@ -75,10 +63,6 @@ export default () => {
                         <li style={li}>
                             {repository.open_issues_count}
                             <small style={tsmall}>issues</small>
-                        </li>
-                        <li style={li}>
-                            {repository.lastCommit}
-                            <small style={tsmall}>last comit</small>
                         </li>
                     </ul>
                 </div>
