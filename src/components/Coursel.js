@@ -52,6 +52,7 @@ export default () => {
         >
             {repositories.map(repository => (
                 <div style={card} key={repository.id}>
+                    {console.log(repository.languages_url)}
                     <header style={header}>
                         <img
                             style={img}
