@@ -1,38 +1,24 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-export default class App extends React.Component {
-  render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
+import React, { useState } from "react";
+import ItemsCarousel from "react-items-carousel";
+import { card, btn } from "./Styles";
+export default () => {
+    const [activeItemIndex, setActiveItemIndex] = useState(0);
+    const chevronWidth = 40;
     return (
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
+        <ItemsCarousel
+            requestToChangeActive={setActiveItemIndex}
+            activeItemIndex={activeItemIndex}
+            numberOfCards={3}
+            gutter={20}
+            leftChevron={<button style={btn}>{"<"}</button>}
+            rightChevron={<button style={btn}>{">"}</button>}
+            outsideChevron
+            chevronWidth={chevronWidth}
+        >
+            <div style={card}>First card</div>
+            <div style={card}>Second card</div>
+            <div style={card}>Third card</div>
+            <div style={card}>Fourth card</div>
+        </ItemsCarousel>
     );
-  }
-}
+};
