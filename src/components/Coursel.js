@@ -5,7 +5,17 @@ import {
     FaGithubAlt
 } from "react-icons/fa";
 import ItemsCarousel from "react-items-carousel";
-import { card, btn, header, icon, small, ul, li, tsmall } from "./Styles";
+import {
+    card,
+    header,
+    icon,
+    small,
+    ul,
+    li,
+    tsmall,
+    btnLeft,
+    btnRight
+} from "./Styles";
 import api from "../service/api";
 export default () => {
     useEffect(() => {
@@ -30,14 +40,14 @@ export default () => {
             requestToChangeActive={setActiveItemIndex}
             activeItemIndex={activeItemIndex}
             numberOfCards={2}
-            gutter={20}
+            gutter={10}
             leftChevron={
-                <button style={btn}>
+                <button style={btnLeft}>
                     <FaArrowAltCircleLeft />
                 </button>
             }
             rightChevron={
-                <button style={btn}>
+                <button style={btnRight}>
                     <FaArrowAltCircleRight />
                 </button>
             }

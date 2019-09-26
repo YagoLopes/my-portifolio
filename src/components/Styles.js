@@ -6,14 +6,14 @@ export const card = {
     background: "#fff",
     display: "flex",
     flexDirection: "column",
-    height: 200
+    height: 170,
+    maxWidth: 200
 };
 
 export const header = {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
-    width: "100%"
+    alignItems: "center"
 };
 export const icon = {
     color: "#000",
@@ -23,10 +23,13 @@ export const icon = {
 
 export const small = {
     fontSize: 14,
-    color: "#666"
+    color: "#666",
+    marginLeft: "10%",
+    marginRight: "10%"
 };
 
 export const ul = {
+    marginTop: "3%",
     listStyle: "none",
     padding: 0
 };
@@ -39,8 +42,15 @@ export const tsmall = {
     color: "#999",
     fontStyle: "italic"
 };
-export const btn = {
+export const btnLeft = {
     fontSize: "100%",
     color: "#fff",
-    background: "none"
+    background: "none",
+    marginRight: 10
+};
+export const btnRight = {
+    fontSize: "100%",
+    color: "#fff",
+    background: "none",
+    marginLeft: 10
 };
