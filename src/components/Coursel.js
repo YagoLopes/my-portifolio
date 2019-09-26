@@ -56,11 +56,12 @@ export default () => {
         >
             {repositories.map(repository => (
                 <div style={card} key={repository.id}>
-                    <header style={header}>
-                        <FaGithubAlt style={icon} />
-                        <small style={small}>{repository.name}</small>
-                    </header>
-
+                    <a href={repository.html_url}>
+                        <header style={header}>
+                            <FaGithubAlt style={icon} />
+                            <small style={small}>{repository.name}</small>
+                        </header>
+                    </a>
                     <ul style={ul}>
                         <li style={li}>
                             {repository.stargazers_count}
