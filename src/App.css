@@ -11,6 +11,9 @@ div#container {
     div#container {
         max-width: 80%;
     }
+    div#container footer a {
+        padding-left: 10%;
+    }
 }
 
 div#container img {
