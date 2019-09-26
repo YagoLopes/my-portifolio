@@ -5,6 +5,8 @@ export const card = {
     borderRadius: 10,
     background: "#fff",
     display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     flexDirection: "column",
     height: 170,
     maxWidth: 200
@@ -24,8 +26,8 @@ export const icon = {
 export const small = {
     fontSize: 14,
     color: "#666",
-    marginLeft: "10%",
-    marginRight: "10%"
+    marginLeft: 3,
+    marginRight: 3
 };
 
 export const ul = {

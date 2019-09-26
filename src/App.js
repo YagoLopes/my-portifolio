@@ -11,13 +11,15 @@ export default function App() {
                 <img src={logo} alt="Yago Lopes"></img>
                 <header>Yago Lopes</header>
                 <p>
-                    I was gonna take the time to sit down and write you a little
-                    letter. But I thought a song would probably be a little
-                    better. Instead of a ,letter. That you'd probably just shred
-                    up--yeah. I stumbled on your picture yesterday and it made
-                    me stop and think of. How much of a waste it'd ,be for me to
-                    put some ink to, a stupid piece a. Paper, I'd rather let you
-                    see how. Much I fucking hate you in a freestyle.
+                    Olá! Meu nome é Yago Lopes, e sou formado em Análise e
+                    Desenvolvimento de Sistemas. Conclui meu estágio em uma das
+                    melhores empresa de desenvolvimento da minha cidade, lá
+                    aprendi a trabalhar remoto, e conheci algumas ferramentas
+                    que utilizo em meu leque de soft skills. Eu tenho um
+                    conjunto diversificado de habilidades, desde o design, HTML
+                    + CSS + Javascript, JSX, até o node.js. Administro e
+                    personalizo minhas aplicações em servidores Linux, com
+                    padronização em containers Docker e versionamento Git.
                 </p>
             </main>
 

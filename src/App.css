@@ -11,9 +11,6 @@ div#container {
     div#container {
         max-width: 80%;
     }
-    div#container footer a {
-        padding-left: 10%;
-    }
 }
 
 div#container img {
@@ -43,6 +40,6 @@ div#container footer {
 div#container footer a {
     font-size: 30px;
     padding-top: 1%;
-    padding-left: 3%;
+    padding-left: 5%;
     color: #fff;
 }
