@@ -1,5 +1,5 @@
 export const card = {
-    marginTop: 20,
+    marginTop: 10,
     marginLeft: "auto",
     marginRight: "auto",
     borderRadius: 10,
@@ -8,7 +8,7 @@ export const card = {
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    height: 170,
+    height: 145,
     maxWidth: 200
 };
 
@@ -19,8 +19,8 @@ export const header = {
 };
 export const icon = {
     color: "#000",
-    maxWidth: 64,
-    maxHeight: 64
+    maxWidth: 50,
+    maxHeight: 50
 };
 
 export const small = {
