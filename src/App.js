@@ -18,7 +18,7 @@ export default function App() {
                 <header>Yago Lopes</header>
                 <p>
                     Olá! Meu nome é Yago Lopes, e sou formado em Análise e
-                    Desenvolvimento de Sistemas. Concluí meu estágio em uma das
+                    Desenvolvimento de Sistemas. Conclui meu estágio em uma das
                     melhores empresas de desenvolvimento da minha cidade, lá
                     aprendi a trabalhar remoto, e conheci algumas ferramentas
                     que utilizo em meu leque de soft skills. Eu tenho um
