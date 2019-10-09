@@ -1,51 +1,191 @@
 @import url("https://fonts.googleapis.com/css?family=Rochester&display=swap");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap");
 
 div#container {
+    margin-top: 2%;
+    width: 90%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 30%;
 }
 
-div#container img {
-    margin-top: 3%;
-    max-width: 20vmin;
-    max-height: 20vmin;
+div#container div#card img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
 }
-
-@media only screen and (max-width: 900px) {
-    div#container {
-        max-width: 75%;
-    }
-
-    div#container img {
-        margin-top: 2%;
-        max-width: 30vmin;
-        max-height: 30vmin;
-        border-radius: 50%;
-    }
-}
-
-div#container header {
+div#container div#card header {
     color: #fff;
     font-family: "Rochester", cursive;
     font-size: 40px;
 }
+div#container p {
+    max-width: 88%;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: #f5f5f5;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 div#container p {
     margin-top: 10px;
     color: #fff;
 }
 div#container footer {
     margin-top: 10px;
-    border-top: #fff 1px solid;
-    width: 100%;
+    border-top: #fff 2px solid;
+    min-width: 35%;
     display: flex;
     justify-content: space-evenly;
 }
 
 div#container footer a {
-    font-size: 30px;
-    padding-top: 1%;
+    font-size: 20px;
+    padding-top: 3%;
     color: #fff;
+}
+div#container footer a :hover {
+    color: #f2f2f2;
+}
+div#container aside {
+    margin-top: 10px;
+    background-color: #fff;
+    max-width: 100%;
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 150ms;
+    animation-fill-mode: backwards;
+}
+
+div#container aside header {
+    margin-top: 20px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#container aside header img {
+    width: 8%;
+    height: 8%;
+    margin-left: 3%;
+}
+
+div#container aside div {
+    margin-top: 15px;
+    background-color: #decc62;
+    width: 60%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    animation-name: move;
+    animation-duration: 1s;
+}
+div#container aside div:hover {
+    background-color: #dd7d7c;
+}
+@media screen and (max-width: 768px) {
+    div#container aside div {
+        width: 90%;
+    }
+}
+div#container aside div span {
+    font-size: 18px;
+    min-width: 60%;
+    height: 100%;
+    text-align: left;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+div#container aside div span a {
+    color: #000;
+    cursor: pointer;
+}
+
+div#container aside div ul {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 10%;
+}
+div#container aside div ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10%;
+}
+div#container aside div ul li img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10%;
+}
+
+/*Animation*/
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateX(-35%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/*squares*/
+
+.squares li {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: up 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-900px) rotate(960deg);
+    }
 }
